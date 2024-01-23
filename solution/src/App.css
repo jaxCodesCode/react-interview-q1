@@ -1,38 +1,125 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Comic Sans MS', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  border-width: 2px !important;
+  box-shadow: 3px 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-text {
+  color: red;
+  font-size: 0.75rem;
+  width: 90%;
+}
+
+.first-btn {
+  margin-right: 0.5rem;
+}
+
+.form-container {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: flex-start;
+  height: 300px;
+  padding: 10px;
+  width: 300px;
+}
+
+.input-label {
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.name-input-container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.sketch-border {
+  border-top-left-radius: 155px 5px;
+  border-top-right-radius: 8px 300px;
+  border-bottom-right-radius: 400px 8px;
+  border-bottom-left-radius: 8px 400px;
+  border: solid black;
+}
+
+.sketch-border-input {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  border: solid black;
+}
+
+button {
+  font-family: 'Comic Sans MS';
+}
+
+input {
+  font-family: 'Comic Sans MS';
+  width: 200px;
+}
+
+select {
+  font-family: 'Comic Sans MS';
+  width: 205px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form > div {
+  margin-bottom: 1rem;
+}
+
+table {
+  border-spacing: 0;
+  color: black;
+  min-width: 75%;
+}
+
+td:first-child {
+  border-right: solid black;
+}
+
+th {
+  text-align: start;
+  background-color: grey;
+}
+
+th:first-child {
+  border-right: solid black;
+}
+
+td {
+  height: 1rem;
+}
+
+tr:nth-child(odd) > td {
+  background-color: lightgrey;
 }
