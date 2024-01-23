@@ -19,6 +19,10 @@ function App() {
 
     fetchLocations();
   }, [])
+
+  useEffect(() => {
+    setLocation(locations[0])
+  }, [locations])
   
   const changeName = (e) => {
     isNameValid(e.target.value)
@@ -34,13 +38,15 @@ function App() {
 
   const submitForm = (e) => {
     e.preventDefault();
+    console.log(name);
+    console.log(location)
     setEntries([...entries, { name: name, location: location }]);
     clearForm();
   }
 
   const clearForm = () => {
     setName('');
-    setLocation('canada');
+    setLocation('Canada');
     setNameError('');
   }
 

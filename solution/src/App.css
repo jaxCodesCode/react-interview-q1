@@ -118,6 +118,7 @@ th:first-child {
 
 td {
   height: 1rem;
+  text-align: left;
 }
 
 tr:nth-child(odd) > td {
